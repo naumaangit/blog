@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+  displayVal = '';
+  getName(name:string, secondName:string)
+  {
+    alert(name);
+    alert(secondName);
+  }
+
+  getData(val:string)
+  {
+    console.warn(val);
+  }
+
+  getValue(val:string)
+  {
+    console.warn(val);
+    this.displayVal=val;
+  }
 }
